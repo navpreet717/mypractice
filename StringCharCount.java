@@ -4,24 +4,28 @@ import java.util.Scanner;
 
 public class StringCharCount {
 
+	
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner s=new Scanner(System.in);
-		System.out.println("enter a string");
-		String str=s.nextLine();
-		int numberofcharactrs=str.length();
-		System.out.println("number of characters:"+numberofcharactrs);
+
+	    double scores;
+	   
+
+	    // Create a Scanner object for keyboard input.
+	    Scanner keyboard = new Scanner(System.in);
+
+	    do {
+	        // ask user for input
+	        System.out.print("Enter Score: ");
+	        scores = keyboard.nextDouble();
 
 
-		//the number of times  c appear in the sentence 
-		int charCount = 0;
-        for(int i =0 ; i<str.length(); i++){
-            if(str.charAt(i) == 'e'){
-                charCount++;
-                System.out.println("number of times e appear"+charCount);
-            }
+	    } while (scores != -1);
 
-
+	    // close scanner
+	    keyboard.close();
+	    double average=(scores++)/scores;
+	        System.out.println("scores" +average );
+	    }
+	
 	}
-
-}}
