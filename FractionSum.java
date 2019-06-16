@@ -14,7 +14,7 @@ public class FractionSum {
 			    sum += (x/y);
 			    }
 			 
-			    System.out.println("The sum of the series of numbers is " + sum);
+			    System.out.printf("The sum of the series of numbers is : %.2f " , sum);
 			 }
 			}
 
